@@ -1,0 +1,48 @@
+{
+  "name": "react-native-login-template-ak",
+  "description": "A comprehensive React Native authentication template with Firebase, featuring modern UI components, secure token management, and rate limiting",
+  "version": "1.0.0",
+  "main": "src/App.js",
+  "keywords": [
+    "react-native",
+    "expo",
+    "firebase",
+    "authentication",
+    "login",
+    "template",
+    "jwt",
+    "secure-storage",
+    "rate-limiting",
+    "context-api",
+    "navigation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/react-native-login-template-ak.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/react-native-login-template-ak/issues"
+  },
+  "homepage": "https://github.com/your-username/react-native-login-template-ak#readme",
+  "files": [
+    "src/**/*",
+    "env.example",
+    "README.md",
+    "package.json",
+    "app.json",
+    "babel.config.js",
+    "tsconfig.json",
+    "eslint.config.js"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.70.0",
+    "expo": ">=49.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+} 
