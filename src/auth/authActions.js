@@ -1,24 +1,24 @@
 // Authentication actions using Firebase Auth
 import {
-    createUserWithEmailAndPassword,
-    getIdToken,
-    onAuthStateChanged,
-    sendPasswordResetEmail,
-    signInWithEmailAndPassword,
-    signOut,
-    updateProfile,
+  createUserWithEmailAndPassword,
+  getIdToken,
+  onAuthStateChanged,
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+  signOut,
+  updateProfile,
 } from 'firebase/auth';
 import { auth } from '../api/firebase';
 import {
-    checkLoginRateLimit,
-    checkRegisterRateLimit,
-    recordLoginAttempt,
-    recordRegisterAttempt,
+  checkLoginRateLimit,
+  checkRegisterRateLimit,
+  recordLoginAttempt,
+  recordRegisterAttempt,
 } from '../utils/delay';
 import {
-    clearAuthData,
-    storeTokens,
-    storeUserData
+  clearAuthData,
+  storeTokens,
+  storeUserData
 } from '../utils/storage';
 
 /**
@@ -73,7 +73,7 @@ export const registerUser = async (email, password, displayName = '') => {
       user: userData,
     };
   } catch (error) {
-    console.error('Registration error:', error);
+    
     
     // Record failed registration attempt
     await recordRegisterAttempt(false);
@@ -154,7 +154,7 @@ export const loginUser = async (email, password) => {
       user: userData,
     };
   } catch (error) {
-    console.error('Login error:', error);
+    
     
     // Record failed login attempt
     await recordLoginAttempt(false);
@@ -209,7 +209,7 @@ export const logoutUser = async () => {
       success: true,
     };
   } catch (error) {
-    console.error('Logout error:', error);
+    
     
     return {
       success: false,
@@ -231,7 +231,7 @@ export const sendPasswordReset = async (email) => {
       success: true,
     };
   } catch (error) {
-    console.error('Password reset error:', error);
+    
     
     let errorMessage = 'Failed to send password reset email.';
     
@@ -282,7 +282,7 @@ export const refreshAuthToken = async () => {
       token: idToken,
     };
   } catch (error) {
-    console.error('Token refresh error:', error);
+    
     
     return {
       success: false,
@@ -319,7 +319,7 @@ export const getCurrentUser = async () => {
       user: userData,
     };
   } catch (error) {
-    console.error('Get current user error:', error);
+    
     
     return {
       success: false,

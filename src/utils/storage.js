@@ -160,5 +160,5 @@ export const getLastLogin = async () => {
     return null;
   }
 };
-
 export { STORAGE_KEYS };
+

@@ -1,11 +1,11 @@
 // Home Screen
 import React from 'react';
 import {
-    SafeAreaView,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
 } from 'react-native';
 
 import { useAuth } from '../auth/useAuth';
@@ -73,7 +73,7 @@ const HomeScreen = ({ navigation }) => {
                 title="Resend Verification Email"
                 onPress={() => {
                   // Implement resend verification logic here
-                  console.log('Resend verification email');
+                  
                 }}
                 variant="outline"
                 size="small"
@@ -96,7 +96,7 @@ const HomeScreen = ({ navigation }) => {
               title="Refresh Token"
               onPress={() => {
                 // Implement token refresh logic here
-                console.log('Refresh token');
+                
               }}
               variant="outline"
               style={styles.actionButton}
