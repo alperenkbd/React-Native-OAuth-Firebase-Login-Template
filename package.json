@@ -1,7 +1,7 @@
 {
   "name": "@alperen06/react-native-login-template",
   "main": "App.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comprehensive React Native authentication template with Firebase, featuring modern UI components, secure token management, and rate limiting",
   "keywords": ["react-native", "expo", "firebase", "authentication", "template"],
   "author": "Alperen Kabadayi <alperen_kabadayi@hotmail.com>",
