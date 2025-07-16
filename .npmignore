@@ -1,0 +1,22 @@
+# Development files
+node_modules/
+.expo/
+.git/
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keep only the source files and essentials
+!src/
+!assets/
+!App.js
+!app.json
+!package.json
+!env.example
+!README.md
+!template.js 

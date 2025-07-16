@@ -1,7 +1,15 @@
 {
-  "name": "react-native-login-template-ak",
+  "name": "@alperen06/react-native-login-template",
   "main": "App.js",
   "version": "1.0.0",
+  "description": "A comprehensive React Native authentication template with Firebase, featuring modern UI components, secure token management, and rate limiting",
+  "keywords": ["react-native", "expo", "firebase", "authentication", "template"],
+  "author": "Alperen Kabadayi <alperen_kabadayi@hotmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alperenkbd/React-Native-OAuth-Firebase-Login-Template.git"
+  },
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -48,5 +56,5 @@
     "eslint": "^9.25.0",
     "eslint-config-expo": "~9.2.0"
   },
-  "private": true
+  "private": false
 }
